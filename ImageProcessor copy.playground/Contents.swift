@@ -4,7 +4,6 @@ import UIKit
 
 let image = UIImage(named: "sample")
 
-// Haung SB 黄煞笔
 
 func brightnessAdjustment(myImage:UIImage, intensity:Int) -> UIImage{
     let myRGBA = RGBAImage(image: myImage)
