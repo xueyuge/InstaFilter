@@ -5,3 +5,9 @@ import UIKit
 let image = UIImage(named: "sample")
 
 // Process the image!
+
+
+
+func imageProcessor(function:String, intensity:Int){
+    
+}
