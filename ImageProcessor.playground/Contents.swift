@@ -9,9 +9,9 @@ let image = UIImage(named: "sample")
 func dimImage(myImage:UIImage, dim_value:Int) -> UIImage{
     let myRGBA = RGBAImage(image: myImage)
     
-    for var y in 0 ..< myRGBA!.height{
-        for var x in 0 ..< myRGBA!.width{
-            var index = y * myRGBA!.width + x
+    for y in 0 ..< myRGBA!.height{
+        for x in 0 ..< myRGBA!.width{
+            let index = y * myRGBA!.width + x
             var pixel = myRGBA!.pixels[index]
             let redValue = myRGBA!.pixels[index].red
             let blueValue = myRGBA!.pixels[index].blue
@@ -44,6 +44,6 @@ func dimImage(myImage:UIImage, dim_value:Int) -> UIImage{
     return newImage!
 }
 
-dimImage(image!, dim_value: 255)
+dimImage(image!, dim_value: -2)
 
 
