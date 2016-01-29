@@ -6,4 +6,6 @@ let image = UIImage(named: "sample")
 
 // Process the image!
 
-let test = 
+var test = brightness.self
+
+test.brightnessAdjustment(image!, intensity: 50)

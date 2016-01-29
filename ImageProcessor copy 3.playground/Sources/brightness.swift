@@ -5,9 +5,8 @@ import UIKit
 let image = UIImage(named: "sample")
 
 public class brightness{
-    let BrightnessControl:String
     
-    func brightnessAdjustment(myImage:UIImage, intensity:Int) -> UIImage{
+    public func brightnessAdjustment(myImage:UIImage, intensity:Int) -> UIImage{
         let myRGBA = RGBAImage(image: myImage)
         
         for y in 0 ..< myRGBA!.height{
@@ -66,8 +65,5 @@ public class brightness{
         return newImage!
     }
     
-    init (BrightnessControl:String){
-        self.brightnessAdjustment(image!, intensity: 50)
-    }
 }
 
