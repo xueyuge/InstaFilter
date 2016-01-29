@@ -1,4 +1,5 @@
-//: Playground - noun: a place where people can play
+//Finished by Yuge Xue 
+//Jan 29 2015
 
 import UIKit
 
@@ -6,7 +7,7 @@ let image = UIImage(named: "sample")
 
 // Process the image!
 
-public class ImageProcessor{
+class ImageProcessor{
     
 ////////////////////////////
 //Brightness Adjustment Function
@@ -163,8 +164,8 @@ var imageProcessor = ImageProcessor()
 //imageProcessor.yellowFilter(image!, intensity: 50)
 
 
-//Tan skin function
-//imageProcessor.tanSkin(image!, intensity: 50)
+//Tan skin
+//imageProcessor.tanSkin(image!, intensity: 5)
 
 
 
